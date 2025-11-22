@@ -1,0 +1,22 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+ul {
+  list-style: none;
+}
+.list li button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+span {
+  padding: 10px;
+}
+.actions button,
+.actions select {
+  text-transform: uppercase;
+  margin: 10px;
+}

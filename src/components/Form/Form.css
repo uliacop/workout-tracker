@@ -1,0 +1,17 @@
+.add-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+}
+h2 {
+  padding: 10px;
+}
+.add-form button {
+  text-transform: uppercase;
+  background-color: #cfd3d2;
+}
+button:hover {
+  background-color: #585a59;
+}
