@@ -1,0 +1,8 @@
+.btn-sounds {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  top: 100px;
+  right: 20px;
+  font-size: 20px;
+}

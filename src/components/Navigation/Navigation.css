@@ -1,0 +1,15 @@
+.nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-size: 24px;
+  margin: 10px;
+}
+.button-nav {
+  padding: 8px 30px;
+  border: 1px solid rgb(117, 96, 117);
+  border-radius: 20px;
+  text-decoration: none;
+  color: #837c7c;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}

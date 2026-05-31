@@ -8,10 +8,27 @@
 h2 {
   padding: 10px;
 }
-.add-form button {
+/* .add-form button {
   text-transform: uppercase;
   background-color: #cfd3d2;
-}
+} */
 button:hover {
   background-color: #585a59;
+}
+.description-form {
+  position: relative;
+}
+.clear-btn {
+  position: absolute;
+  left: 80%;
+  top: 55%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: bold;
+}
+.clear-button svg {
+  width: 20px;
+  height: 20px;
 }

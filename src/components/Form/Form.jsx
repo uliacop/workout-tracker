@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import toast, { Toaster } from "react-hot-toast";
+import { IoMdCloseCircleOutline } from "react-icons/io";
 import "./Form.css";
 export default function Form({ onAddExercise }) {
   const [description, setDescription] = useState("");
@@ -37,12 +38,18 @@ export default function Form({ onAddExercise }) {
             </option>
           ))}
         </select>
-        <input
-          type="text"
-          value={description}
-          placeholder="Exercise"
-          onChange={(e) => setDescription(e.target.value)}
-        ></input>
+        <div className="description-form">
+          <input
+            type="text"
+            value={description}
+            placeholder="Exercise"
+            onChange={(e) => setDescription(e.target.value)}
+          ></input>
+          <button className="clear-btn" onClick={() => setDescription("")}>
+            <IoMdCloseCircleOutline />
+          </button>
+        </div>
+
         <button>Add exercise</button>
         <Toaster position="top-center" reverseOrder={false} />
       </form>
