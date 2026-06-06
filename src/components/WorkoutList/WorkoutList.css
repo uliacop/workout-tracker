@@ -1,3 +1,40 @@
+/* .list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.list ul {
+  flex: 1;
+  width: 100%;
+}
+.actions {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+ul {
+  list-style: none;
+}
+
+.list li button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+span {
+  padding: 10px;
+}
+.actions {
+  margin-top: auto;
+}
+.actions button,
+.actions select {
+  text-transform: uppercase;
+  margin: 10px;
+}
+ */
 .list {
   display: flex;
   justify-content: space-between;

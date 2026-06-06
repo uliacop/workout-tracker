@@ -20,18 +20,20 @@ export default function WorkoutList({
       .slice()
       .sort((a, b) => Number(a.completed) - Number(b.completed));
   return (
-    <div className="list">
-      <ul>
-        {sortedExercises.map((exercise) => (
-          <Exercise
-            data={filterExercises}
-            exercise={exercise}
-            key={exercise.id}
-            onDeleteExercise={() => onDeleteExercise(exercise.id)}
-            onToggleExercise={() => onToggleExercise(exercise.id)}
-          />
-        ))}
-      </ul>
+    < >
+      <div className="list">
+        <ul>
+          {sortedExercises.map((exercise) => (
+            <Exercise
+              data={filterExercises}
+              exercise={exercise}
+              key={exercise.id}
+              onDeleteExercise={() => onDeleteExercise(exercise.id)}
+              onToggleExercise={() => onToggleExercise(exercise.id)}
+            />
+          ))}
+        </ul>
+      </div>
       <div className="actions">
         <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
           <option value="input">Sort by input</option>
@@ -40,6 +42,6 @@ export default function WorkoutList({
         </select>
         <button onClick={onClearListExercise}>Clear List of Exercises</button>
       </div>
-    </div>
+    </>
   );
 }

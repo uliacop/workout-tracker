@@ -17,3 +17,7 @@ h2 {
   text-transform: uppercase;
   text-align: center;
 }
+.icon-mode:focus {
+  border: none;
+  background-color: transparent;
+}
